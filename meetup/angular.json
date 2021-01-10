@@ -29,7 +29,7 @@
               "node_modules/primeng/resources/themes/saga-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
               "./node_modules/primeflex/primeflex.css"
-          ],
+            ],
             "scripts": []
           },
           "configurations": {
@@ -97,7 +97,7 @@
               "node_modules/primeng/resources/themes/saga-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
               "./node_modules/primeflex/primeflex.css"
-          ],
+            ],
             "scripts": []
           }
         },
@@ -125,8 +125,13 @@
               "devServerTarget": "meetup:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "meetup"
 }
