@@ -1,0 +1,44 @@
+<p-toast position="top-center" key="tc"></p-toast>
+<div class="p-grid p-ai-center vertical-container">
+  <div class="p-col-1"></div>
+  <div class="p-col-10" style="background: white;
+     padding: 1.5rem; margin-top:2rem;   background: rgba(204, 204, 204, 0.5);
+     position: absolute;
+     left: 50%;
+     top: 35%;
+     -webkit-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);">
+     <div class = "wrapper">
+        <div class="p-fluid">
+           <div class="p-field">
+              <label for="time">Time & Date</label>
+              <p-calendar [(ngModel)]="userDate" [showTime]="true" inputId="time"></p-calendar>
+           </div>
+           <div class="p-field">
+              <label for="temperature">Temperature</label>
+              <p-inputNumber [(ngModel)]="userTemp" prefix="" suffix="°F" :min="-10" :max="100"></p-inputNumber>
+           </div>
+        </div>
+        <button pButton type="button" label="Generate" (click)="handleClick($event)" style="float:right"></button>
+        <br>
+        <br>
+        <br>
+      </div>
+  </div>
+
+  <div class="p-col-1"></div>
+</div>
+<br>
+<div class="p-col-10" style="background: white;
+  background: rgba(204, 204, 204, 0.5);
+position: absolute;
+left: 50%;
+top: 65%;
+color: white;
+padding: 1.5rem;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);">
+<div class = "wrapper">
+   <div class="p-fluid">{{ meetingMessage }} </div>
+ </div>
+</div>

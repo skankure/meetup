@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+/*background: linear-gradient(to bottom, #3f5efb 0%,#e246fc 100%);*/
+height: 100%;
+margin: 0;
+background-repeat: no-repeat;
+background-attachment: fixed;
+overflow-x: hidden;
+background-image:url('src/assets/sunrise-1014712_1920.jpg');
+}
+
+
+
+.p-fluid .p-inputnumber .p-inputnumber-input {
+  background:transparent;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: smaller;
+}
+
+ .p-calendar .p-inputtext {
+  background:transparent;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: smaller;
+}
+
+
+
+.container {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+label {
+
+color: white;
+text-transform: uppercase;
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+
+div.p-field , div.p-formgroup-inline{
+margin-top:25px;
+margin-bottom: 25px
+}
