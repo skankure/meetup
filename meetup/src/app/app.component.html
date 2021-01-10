@@ -12,11 +12,11 @@
         <div class="p-fluid">
            <div class="p-field">
               <label for="time">Time & Date</label>
-              <p-calendar [(ngModel)]="userDate" [showTime]="true" inputId="time"></p-calendar>
+              <p-calendar [(ngModel)]="userDate" [showTime]="true" inputId="time" (onShow)="onSelection($event)"></p-calendar>
            </div>
            <div class="p-field">
               <label for="temperature">Temperature</label>
-              <p-inputNumber [(ngModel)]="userTemp" prefix="" suffix="°F" :min="-10" :max="100"></p-inputNumber>
+              <p-inputNumber [(ngModel)]="userTemp" prefix="" suffix="°F" :min="-10" :max="100" ></p-inputNumber>
            </div>
         </div>
         <button pButton type="button" label="Generate" (click)="handleClick($event)" style="float:right"></button>

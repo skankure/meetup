@@ -43,6 +43,13 @@ export class AppComponent implements OnInit {
     this.messageService.add({key: 'tc', severity: 'error', summary: 'Error', detail: 'Please enter valid input'});
   }
 
+  onSelection() {
+    this.showUserMessage = false;
+  }
+
+  onFocus() {
+    this.showUserMessage = false;
+  }
 
 
   handleClick($event) {
