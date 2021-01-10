@@ -72,7 +72,6 @@ export class AppComponent implements OnInit {
 
 
     this.meetingMessage = 'Let\'s meet at ' + place.name + ' on ' + this.userDate + ' located at ' + place.address;
-    console.log(this.meetingMessage);
     this.showUserMessage = true;
 }
 
